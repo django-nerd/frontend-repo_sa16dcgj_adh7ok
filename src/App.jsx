@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Curriculum from './components/Curriculum';
 import CTA from './components/CTA';
+import Dashboard from './components/Dashboard';
 
 function Footer() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Hero />
         <Curriculum />
         <CTA />
+        <Dashboard />
       </main>
       <Footer />
     </div>
