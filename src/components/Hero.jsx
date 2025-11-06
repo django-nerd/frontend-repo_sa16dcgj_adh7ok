@@ -1,12 +1,18 @@
 import { motion } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
 import { Star } from 'lucide-react';
+import ErrorBoundary from './ErrorBoundary';
 
 export default function Hero() {
+  // Use the provided stable Spline asset. Errors inside Spline are isolated by ErrorBoundary.
+  const sceneUrl = 'https://prod.spline.design/Qe6dlWJktclXcUBS/scene.splinecode';
+
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/6u2s1JgI5C7eV2eZ/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <ErrorBoundary>
+          <Spline scene={sceneUrl} style={{ width: '100%', height: '100%' }} />
+        </ErrorBoundary>
       </div>
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/70 via-white/80 to-white" />
 
