@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { BookOpenCheck, Layers3, Wrench } from 'lucide-react';
+import { BookOpen, Layers, Wrench } from 'lucide-react';
 
 const weeks = [
   {
     title: 'Week 1 — AI Fundamentals',
-    icon: BookOpenCheck,
+    icon: BookOpen,
     points: [
       'Core concepts: ML vs. DL, LLMs, prompting basics',
       'Ethics & responsible AI',
@@ -22,7 +22,7 @@ const weeks = [
   },
   {
     title: 'Week 3 — Capstone Project',
-    icon: Layers3,
+    icon: Layers,
     points: [
       'Choose a real problem and design an AI solution',
       'Build with no-code + code tooling',
